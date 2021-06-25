@@ -1,0 +1,293 @@
+%-------------------------
+% Resume in Latex
+% Author : Yuchong Pan
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.9in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{ #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\projectitem}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\awardSubItem}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{ #1} & \textit{ #2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+
+
+\renewcommand{\tabcolsep}{20pt}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\hspace*{2.8in}
+% UBC COOP headings
+\includegraphics[scale = 0.5]{coophead.png}%
+
+\vspace{-0.32in}
+
+%----------HEADING-----------------
+\textbf{\Large Kaiyuan  Yang} 
+\vspace{0.15in}
+
+\begin{tabular}{ccc}
+Email:yang.k.yuan@gmail.com & Linkedin: \href{https://www.linkedin.com/in/kaiy-yang/}{kaiy-yang} & Mobile: (236) 833-5418 \\
+\end{tabular}
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+\resumeSubHeadingListStart
+  \resumeSubItem{Programming Languages}
+    {C++, Java, C\#, TypeScript(JavaScript), Racket, Python, MySQL, \LaTeX} \\
+  \resumeSubItem{Technologies}
+    {Git, Node.js, React, Microsoft Azure, .NET, Visual Studio Code, Azure Data Studio, Docker} \\
+\resumeSubHeadingListEnd
+
+%-----------WORK EXPERIENCE-----------------
+\section{Selected Work Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+    {Web Developer Co-op}{Vancouver, BC}
+    {BGC Engineering Inc.}{May 2021 -- present}
+  %   \resumeItemListStart
+  %   \setlength\itemsep{-0.2em}
+  % \item {Working in the frontend team with agile development environments. }
+  % \item {Using Trello to create and assign user stories.}
+  % \resumeItemListEnd
+  
+    \resumeSubheading
+      {Teaching Assistant for CPSC121 / CPSC213}{Vancouver, BC}
+      {Department of Computer Science, UBC}{Jan 2020 -- present}
+     \resumeItemListStart
+     \setlength\itemsep{-0.2em}
+       \item Directed labs, tutorials; Held weekly office hours; Assisted over 200 students in understanding course concepts.
+       \item Held weekly meetings to discuss online teaching issues and ways to improve.
+     \resumeItemListEnd
+    % \resumeSubheading
+    %   {Part-time student Worker}{Vancouver, BC}
+    %   {Open kitchen(Campus Residential Cafeterias), Orchard Commons}{January 2019 -- April 2019}
+    %   \resumeItemListStart
+    %   \setlength\itemsep{-0.2em}
+    %   \item
+    %     {Covered shifts in several different kitchens, learned to make burritos and sandwiches in an hour. Served over 200 students consecutively in 3 hours.}
+    %   \resumeItemListEnd
+
+      \resumeSubheading
+        {CS Instructor}{Vancouver, BC}
+        {Easy Eduation Vancouver}{Sept 2020 - Jan 2021}
+        \resumeItemListStart
+        \item Designed the entire Software Software Construction tutoring material for college level students, including the UML diagrams, Object-oriented programming knowledge, 
+        design principles and design patterns. Improved their overall grades from C to A.
+        \item Inspired students with new idea on the course project. Taught them how to debug on their project.
+        \resumeItemListEnd
+
+    
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PERSONAL PROJECTS-----------------
+
+
+\section{Selected Projects}
+
+\resumeSubHeadingListStart
+% \projectitem{Course Information database \quad \normalfont{Java, JUnit, Swing}}{Sept-Dec 2019}
+
+% \begin{itemize}
+%  \setlength\itemsep{-0.2em}
+%   \item Developed a course database system with Java Swing GUI that allows users to search Course information.
+%   \item Incorporated iterator and singleton design patterns; Improved the robustness using exception handling.
+%   \item Reduced duplicated code by 30\% applying design principles; Practiced Test-Driven Development with JUnit and parsing Json file from public API.
+
+% \end{itemize}
+
+  % \projectitem{Monthly-Upass Renewal \quad \normalfont{Python, Selenium, HTML}}{Jan-Feb 2020}
+  % \begin{itemize}
+  %   \setlength\itemsep{-0.2em}
+  %   \item Wrote A script that automatically load the monthly Upass for ubc students using Selenium Framework.
+  %   \item Managed to store the cache for UBC login credentials.
+  %   \item Used separate Json file to store the user ID and Passwords.
+  % \end{itemize}
+
+  \projectitem{Flybook (Workspace Application) \quad \normalfont{Java, JUnit, JDBC, MySQL, IntelliJ}}{Sept-Dec 2020}
+  \begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item Developed a Java application that simulates work scheduling on meetings while allowing the social networking functionality 
+   on an enterprise level.
+    \item Managed to delete, update, and store all the information using JDBC and MySQL queries.
+    \item Embedded Aggregation and Division queries to achieve useful functionalities. 
+  \end{itemize}
+
+  % would replace it with CPSC310 project and 304 project
+  \projectitem{Insight UBC Query System \quad \normalfont{TypeScript, Node.js, Mocha, Git, IntelliJ}}{Sept-Dec 2020}
+  \begin{itemize}
+   \setlength\itemsep{-0.2em}
+    \item Developed a Web application with rest endpoints using TypeScript;
+    Implemented a query engine that can parse and query UBC courses and room data according to the chosen constraints.
+    \item Implemented a data controller that can parse HTML and JSON data and a query controller that handles queries in the form of JSON Object.
+    % \item Solved the course timetabling problem that maximizes student enrolment and minimizes the maximum geo-location distance between any two courses using a greedy algorithm.
+    \item Followed Test-Driven Development process, and wrote Robust tests for both backend and frontend 
+  \end{itemize}
+
+
+  \projectitem{MiniRacket Compiler \quad \normalfont{Racket}}{Jan-April 2021}
+  \begin{itemize}
+   \setlength\itemsep{-0.2em}
+    \item A Compiler for a subset of Racket to machine language (x86-64 CPU instruction set with Linux system calls). This includes the phase of 
+    intermediate representation, code generation and optimization.
+    \item Wrote Robust Unit tests for each compiling pass.
+  \end{itemize}
+
+
+
+  \resumeSubHeadingListEnd
+
+%-----------ACADEMIC PROJECTS-----------------
+% \section{Academic Projects}
+
+  
+
+  % \projectitem{Color filler Animation}{Mar 2020}
+  
+  % \begin{itemize}
+  %  \item Used BFS and DFS algorithm to animate the filling process into a gif.
+  %  \item Used GDB for debugging and testing code.
+  % \end{itemize}
+  % \textbf{Technologies:} C++, GDB, UNIX
+
+  % \projectitem{Image Compression}{Mar-Apl 2020}
+  % \begin{itemize}
+  %   \item Implemented a space partition tree similar to KD tree.
+  %   \item Wrote Unit tests for testing the functionality.
+  %   \item Optimized the sorting algorithm using 
+
+  %  \end{itemize}
+  %  \textbf{Technologies:} C++, GDB, UNIX
+
+%-----------ACTIVITIES-----------------
+
+%
+% \section{Extra-curricular activities}
+% \resumeSubHeadingListStart
+%   \resumeSubItem{Computer Science Tri-mentoring program}{October 2019 - Feb 2020}
+%     \begin{itemize}
+%       \setlength\itemsep{-0.2em}
+%       \item Join the program as a junior student to learn industry experience.
+%       \item Regular contacts with industry mentor through meetings or emails.
+%     \end{itemize}
+
+%     % \resumeSubItem{Capstone Conference}
+%     % {}
+%     % \begin{itemize}
+%     %   \item Research project:\textit{Discover the relationship between the prevalence of type-2 diabetes and the economy}. Initiated research proposal,collected data and did the analysis in the group of two. 
+%     %   \item A final research presentation was presented to a class of 20 students and 2 professors.
+%     % \end{itemize}
+% \resumeSubHeadingListEnd 
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Vancouver, BC}
+      {Bachelor of Science, Honors in Computer Science}{September 2018 -- April 2023 (expected)}
+      \resumeItemListStart
+          \resumeItem{Grade Average (Cummulative)} {90.8\%}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+% -----------Awards-----------------
+\section{Awards}
+  \resumeSubHeadingListStart
+  %  \awardSubItem{Principle Award in Vantage One Science, UBC}   {May 2019}
+  \awardSubItem{Trek Excellent Scholarship}     {2019/2020}
+  \awardSubItem{Dean's Honor list/ Science Scholar} {2020/2021}
+  \resumeSubHeadingListEnd
+
+
+
+% %--------PERSONAL SKILLS------------
+% \section{Miscellaneous}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{Languages}
+%       {Mandarin Chinese(Native), English(Fluent).} \\
+%     \resumeSubItem{Interest}
+%       {Violin(Gr.10), Tennis} \\
+%   \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
