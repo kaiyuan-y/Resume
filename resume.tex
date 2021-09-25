@@ -51,7 +51,7 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.97\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
       \textbf{#1} & #2 \\
       \textit{#3} & \textit{ #4} \\
     \end{tabular*}\vspace{-5pt}
@@ -59,25 +59,38 @@
 
 \newcommand{\projectitem}[2]{
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+    \begin{tabular*}{0.97\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+      \textbf{#1} & \textit{#2} \\
     \end{tabular*}\vspace{-5pt}
 }
 
+
+
 \newcommand{\awardSubItem}[2]{
   \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.97\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
       \textbf{ #1} & \textit{ #2} \\
     \end{tabular*}\vspace{-8pt}
 }
 
 
 
-\renewcommand{\tabcolsep}{20pt}
+\renewcommand{\tabcolsep}{30pt}
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\courseitem}[6]{
+  \item[]
+  \begingroup
+  \renewcommand{\tabcolsep}{40pt}
+  \begin{tabular*}{0.97\textwidth}{@{}lll@{}}
+      \textbf{\labelitemii \hspace{0.5pt}#1:} & \textbf{\labelitemii \hspace{0.5pt} #3:} & \textbf{\labelitemii \hspace{0.5pt} #5:}\\
+      \textit{#2} & \textit{#4} & \textit{#6}\\
+    \end{tabular*}\vspace{2pt}
+  \endgroup
+}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -97,12 +110,15 @@
 \vspace{-0.32in}
 
 %----------HEADING-----------------
-\textbf{\Large Kaiyuan  Yang} 
+\textbf{\Large Kaiyuan  Yang}
+
+\textit{\small Computer Science, Year 3}
 \vspace{0.15in}
 
-\begin{tabular}{ccc}
+\vspace{-1pt}\begin{tabular}{llr}
 Email:yang.k.yuan@gmail.com & Linkedin: \href{https://www.linkedin.com/in/kaiy-yang/}{kaiy-yang} & Mobile: (236) 833-5418 \\
-\end{tabular}
+\end{tabular}\vspace{-5pt}
+%----------------------------------
 
 
 %--------PROGRAMMING SKILLS------------
@@ -111,38 +127,38 @@ Email:yang.k.yuan@gmail.com & Linkedin: \href{https://www.linkedin.com/in/kaiy-y
   \resumeSubItem{Programming Languages}
     {C++, Java, C\#, TypeScript(JavaScript), Racket, Python, MySQL, \LaTeX} \\
   \resumeSubItem{Technologies}
-    {Git, Node.js, React, Microsoft Azure, .NET, Visual Studio Code, Azure Data Studio, Docker} \\
+    {Git, Node.js, React, Microsoft Azure, .NET, Visual Studio Code, Azure Data Studio, Agile} \\
 \resumeSubHeadingListEnd
 
 %-----------WORK EXPERIENCE-----------------
-\section{Selected Work Experience}
+\section{Work Experience}
   \resumeSubHeadingListStart
   \resumeSubheading
     {Web Developer Co-op}{Vancouver, BC}
     {BGC Engineering Inc.}{May 2021 -- present}
     \resumeItemListStart
     \setlength\itemsep{-0.2em}
-      \item {Worked as a full stack developer on Cambio™, BGC Engineering's geohazard risk management software using TypeScript, C\#, and SQL Server.}
-      \item {Refactored the identify Tool service to enable customize features for different clients.}
-      \item {Fixed numerous bugs in both front and back end of the Cambio code.}
-      \item {Implemented Drawing Widgets on the React Esri Map with addition features on labeling and saving.}
+      \item {Working as a full stack developer on Cambio™ project in an agile environment, using TypeScript, C\#, and SQL Server.}
+      \item {Implementing Sketch Widget with addition features based on the Arcgis Javascript API.}
+      \item {Refactored the identify Tool service to enable customized template for different clients.}
+      \item {Reduced the JIRA backlog bug ticket by 10\%.}
   \resumeItemListEnd
   
     \resumeSubheading
-      {Teaching Assistant for CPSC121 / CPSC213}{Vancouver, BC}
+      {Teaching Assistant}{Vancouver, BC}
       {Department of Computer Science, UBC}{Jan 2020 -- present}
      \resumeItemListStart
+     
      \setlength\itemsep{-0.2em}
-       \item Directed labs, tutorials; Held weekly office hours; Assisted over 200 students in understanding course concepts.
-       \item Held weekly meetings to discuss online teaching issues and ways to improve.
-     \resumeItemListEnd
-      \resumeSubheading
-        {CS Tutor}{Vancouver, BC}
-        {Easy Eduation Vancouver}{Sept 2020 - Jan 2021}
-        \resumeItemListStart
-        \item Designed the entire Software Software Construction tutoring material for college level students, including the UML diagrams, Object-oriented programming knowledge, 
-        design principles and design patterns and Debugging. Improved their overall grades from C to A.
-        \resumeItemListEnd
+     \courseitem{CPSC121}{Model of Computation}{CPSC213}{Computer Systems}{CPSC313}{Computer Hardware and OS}
+       \item Directing tutorials for more than 200 3rd year students; Holding weekly office hours.
+     \resumeItemListEnd 
+      % \resumeSubheading
+      %   {CS Tutor}{Vancouver, BC}
+      %   {Easy Education Vancouver}{Sept 2020 - Jan 2021}
+      %   \resumeItemListStart
+      %   \item Designed the entire second year Software Construction tutoring material; Improved their overall grades from C to A.
+      %   \resumeItemListEnd
 
     
   \resumeSubHeadingListEnd
@@ -152,7 +168,7 @@ Email:yang.k.yuan@gmail.com & Linkedin: \href{https://www.linkedin.com/in/kaiy-y
 %-----------PERSONAL PROJECTS-----------------
 
 
-\section{Selected Projects}
+\section{Projects}
 
 \resumeSubHeadingListStart
 % \projectitem{Course Information database \quad \normalfont{Java, JUnit, Swing}}{Sept-Dec 2019}
@@ -173,30 +189,31 @@ Email:yang.k.yuan@gmail.com & Linkedin: \href{https://www.linkedin.com/in/kaiy-y
   %   \item Used separate Json file to store the user ID and Passwords.
   % \end{itemize}
 
-  \projectitem{Flybook (Workspace Application) \quad \normalfont{Java, JUnit, JDBC, MySQL, IntelliJ}}{Sept-Dec 2020}
-  \begin{itemize}
-    \setlength\itemsep{-0.2em}
-    \item Developed a Java application that simulates work scheduling on meetings while allowing the social networking functionality 
-   on an enterprise level.
-    \item Managed to delete, update, and store all the information using JDBC and MySQL queries.
-    \item Embedded Aggregation and Division queries to achieve useful functionalities. 
-  \end{itemize}
-
   % would replace it with CPSC310 project and 304 project
   \projectitem{Insight UBC Query System \quad \normalfont{TypeScript, Node.js, Mocha, Git, Vscode}}{Sept-Dec 2020}
   \begin{itemize}
-   \setlength\itemsep{-0.2em}
-    \item Developed a Web application with rest endpoints using TypeScript;
+    \setlength\itemsep{-0.2em}
+    \item Developed a web application with rest endpoints using TypeScript;
     \item Implemented a data controller that can parse HTML and JSON data and a query engine that handles queries in the form of JSON Object.
     % \item Solved the course timetabling problem that maximizes student enrolment and minimizes the maximum geo-location distance between any two courses using a greedy algorithm.
     \item Followed Test-Driven Development process, and wrote Robust tests for both backend and frontend 
   \end{itemize}
 
+  \projectitem{Flybook (Workspace Application) \quad \normalfont{Java, JUnit, JDBC, MySQL, IntelliJ}}{Sept-Dec 2020}
+  \begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item Developed a java application that simulates work scheduling on meetings while allowing the social networking functionality 
+   on an enterprise level.
+    \item Managed to delete, update, and store all the information using JDBC and MySQL queries.
+    \item Embedded Aggregation and Division queries to achieve useful functionalities. 
+  \end{itemize}
+
+
 
   \projectitem{MiniRacket Compiler \quad \normalfont{Racket}}{Jan-April 2021}
   \begin{itemize}
    \setlength\itemsep{-0.2em}
-    \item A Compiler for a subset of Racket to machine language (x86-64 CPU instruction set with Linux system calls). This includes the phase of 
+    \item Developed a compiler for a subset of Racket to machine language (x86-64 CPU instruction set with Linux system calls). This includes the phase of 
     intermediate representation, code generation and optimization.
     \item Wrote Robust Unit tests for each compiling pass.
   \end{itemize}
@@ -250,6 +267,7 @@ Email:yang.k.yuan@gmail.com & Linkedin: \href{https://www.linkedin.com/in/kaiy-y
   %  \awardSubItem{Principle Award in Vantage One Science, UBC}   {May 2019}
   \awardSubItem{Trek Excellent Scholarship}     {2019/2020}
   \awardSubItem{Dean's Honor list/ Science Scholar} {2020/2021}
+  \awardSubItem{Charles and Jane Banks Scholarship}{2021}
   \resumeSubHeadingListEnd
 
 
