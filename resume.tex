@@ -28,7 +28,7 @@
 \addtolength{\oddsidemargin}{-0.375in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.9in}
+\addtolength{\topmargin}{-0.6in}
 \addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
@@ -104,41 +104,40 @@
 
 \begin{document}
 
-\hspace*{2.8in}
+% \hspace*{2.8in}
 % UBC COOP headings
-\includegraphics[scale = 0.5]{coophead.png}%
+% \includegraphics[scale = 0.5]{coophead.png}%
 
 \vspace{-0.32in}
 
 %----------HEADING-----------------
 \textbf{\Large Kaiyuan  Yang}
 
-\textit{\small Computer Science, Year 3}
+\textit{\small Computer Science, Year 4}
 \vspace{0.15in}
 
 \vspace{-1pt}\begin{tabular}{llllr}
-  \faIcon{envelope} yang.k.yuan@gmail.com & \faIcon{phone-volume} (236) 833-5418 & \faIcon{linkedin} \href{https://www.linkedin.com/in/kaiy-yang/}{kaiy-yang} \\
+  \faIcon{envelope} yang.k.yuan@gmail.com & \qquad \faIcon{phone-volume} (236) 833-5418 & \qquad \faIcon{linkedin} \href{https://www.linkedin.com/in/kaiy-yang/}{kaiy-yang} \\
 \end{tabular}\vspace{-5pt}
 %----------------------------------
 
-
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-\resumeSubHeadingListStart
-  \resumeSubItem{Programming Languages}
-    {C++, Java, C\#, TypeScript(JavaScript), Racket, Python, MySQL, \LaTeX} \\
-  \resumeSubItem{Technologies}
-    {Git, Node.js, React, Microsoft Azure, .NET, Visual Studio Code, Azure Data Studio, Agile} \\
-\resumeSubHeadingListEnd
-
 %-----------WORK EXPERIENCE-----------------
 \section{Work Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
+\resumeSubheading
+  {Software Engineer Intern}{Remote}
+  {Coinbase}{May 2022 -- Present}
+  \resumeItemListStart  
+    \item Backend Developement under Payments \& Commerce --- Platform.
+  \resumeItemListEnd
+
+
   \resumeSubheading
     {Software Engineer Intern}{Vancouver, BC}
-    {Salesforce}{Jan 2022 -- present}
+    {Salesforce}{Jan 2022 -- April 2022}
     \resumeItemListStart  
-      \item Working in the Lightning Reports team, a full stack team.
+      \item Implemented Row Limit Filter in Lightning Reports which closed the gap from Salesforce Classic Reports.
+      \item Devised frontend test suite with unit and snapshot tests, improving code coverage in Javascript and Jest.
     \resumeItemListEnd
 
   \resumeSubheading
@@ -146,10 +145,8 @@
     {BGC Engineering Inc.}{May 2021 -- Dec 2021}
     \resumeItemListStart
     \setlength\itemsep{-0.2em}
-      \item {Worked as a full stack developer on Cambio™ in an agile environment, using TypeScript React, C\#.}
-      \item {Implementing Sketch Widget with addition features based on the Arcgis Javascript API.}
+      \item {Worked on \href{https://www.bgcengineering.ca/cambio-landing/}{Cambio™} Project, using TypeScript React, C\#; Implemented new sketch features using Arcgis Javascript API.}
       \item {Refactored the identify Tool service to enable customized template for different clients.}
-      \item {Reduced the JIRA backlog bug ticket by 10\%.}
   \resumeItemListEnd
   
     \resumeSubheading
@@ -159,14 +156,8 @@
      
      \setlength\itemsep{-0.2em}
      \courseitem{CPSC121}{Model of Computation}{CPSC213}{Computer Systems}{CPSC313}{Computer Hardware and OS}
-       \item Directing tutorials for more than 200 3rd year students; Holding weekly office hours.
+       \item Directing tutorials for more than 400 CS students; Holding weekly office hours.
      \resumeItemListEnd 
-      % \resumeSubheading
-      %   {CS Tutor}{Vancouver, BC}
-      %   {Easy Education Vancouver}{Sept 2020 - Jan 2021}
-      %   \resumeItemListStart
-      %   \item Designed the entire second year Software Construction tutoring material; Improved their overall grades from C to A.
-      %   \resumeItemListEnd
 
     
   \resumeSubHeadingListEnd
@@ -176,7 +167,7 @@
 %-----------PERSONAL PROJECTS-----------------
 
 
-\section{Projects}
+\section{Selected Projects}
 
 \resumeSubHeadingListStart
 % \projectitem{Course Information database \quad \normalfont{Java, JUnit, Swing}}{Sept-Dec 2019}
@@ -197,7 +188,6 @@
   %   \item Used separate Json file to store the user ID and Passwords.
   % \end{itemize}
 
-  % would replace it with CPSC310 project and 304 project
   \projectitem{Insight UBC Query System \quad \normalfont{TypeScript, Node.js, Mocha, Git, Vscode}}{Sept-Dec 2020}
   \begin{itemize}
     \setlength\itemsep{-0.2em}
@@ -207,16 +197,14 @@
     \item Followed Test-Driven Development process, and wrote Robust tests for both backend and frontend.
   \end{itemize}
 
-  \projectitem{Flybook (Workspace Application) \quad \normalfont{Java, JUnit, JDBC, MySQL, IntelliJ}}{Sept-Dec 2020}
-  \begin{itemize}
-    \setlength\itemsep{-0.2em}
-    \item Developed a java application that simulates work scheduling on meetings while allowing the social networking functionality 
-   on an enterprise level.
-    \item Managed to delete, update, and store all the information using JDBC and MySQL queries.
-    \item Embedded Aggregation and Division queries to achieve useful functionalities. 
-  \end{itemize}
-
-
+  % \projectitem{Flybook (Workspace Application) \quad \normalfont{Java, JUnit, JDBC, MySQL, IntelliJ}}{Sept-Dec 2020}
+  % \begin{itemize}
+  %   \setlength\itemsep{-0.2em}
+  %   \item Developed a java application that simulates work scheduling on meetings while allowing the social networking functionality 
+  %  on an enterprise level.
+  %   \item Managed to delete, update, and store all the information using JDBC and MySQL queries.
+  %   \item Embedded Aggregation and Division queries to achieve useful functionalities. 
+  % \end{itemize}
 
   \projectitem{MiniRacket Compiler \quad \normalfont{Racket}}{Jan-April 2021}
   \begin{itemize}
@@ -255,6 +243,14 @@
 %     % \end{itemize}
 % \resumeSubHeadingListEnd 
 
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+\resumeSubHeadingListStart
+  \resumeSubItem{Programming Languages}
+    {C++, Java, C\#, TypeScript(JavaScript), Racket, Python, MySQL, \LaTeX} \\
+  \resumeSubItem{Technologies}
+    {Git, Node.js, React, Microsoft Azure, .NET, Visual Studio Code, Azure Data Studio, Agile} \\
+\resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -276,7 +272,7 @@
   \awardSubItem{Trek Excellent Scholarship}     {2019/2020}
   \awardSubItem{Dean's Honor list/ Science Scholar} {2020/2021}
   \awardSubItem{Charles and Jane Banks Scholarship}{2021}
-  \awardSubItem{Faculty of Science International Student Scholarship}{2021}
+  \awardSubItem{Faculty of Science International Student Scholarship}{2021/2022}
   \resumeSubHeadingListEnd
 
 
