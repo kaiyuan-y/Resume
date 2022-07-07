@@ -28,7 +28,7 @@
 \addtolength{\oddsidemargin}{-0.375in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.6in}
+\addtolength{\topmargin}{-0.7in}
 \addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
@@ -121,6 +121,18 @@
 \end{tabular}\vspace{-5pt}
 %----------------------------------
 
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Vancouver, BC}
+      {Bachelor of Science, Honors in Computer Science}{September 2018 -- April 2023 (expected)}
+      \resumeItemListStart
+          \resumeItem{Grade Average (Cummulative)} {90.8\%}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
 %-----------WORK EXPERIENCE-----------------
 \section{Work Experience}
 \resumeSubHeadingListStart
@@ -128,7 +140,9 @@
   {Software Engineer Intern}{Remote}
   {Coinbase}{May 2022 -- Present}
   \resumeItemListStart  
-    \item Backend Developement under Payments --- Retail.
+    \item Working as a backend engineer on the direct deposit in crypto on Coinbase App.
+    \item Implemented the email incentives on bitcoin direct deposit account, which invited more than 10k MTU.
+    \item Migrating the direct deposit account from old ruby repo to Golang repo, including data migration, graphQL endpoint redirect and public service implementation.
   \resumeItemListEnd
 
 
@@ -145,9 +159,9 @@
     {BGC Engineering Inc.}{May 2021 -- Dec 2021}
     \resumeItemListStart
     \setlength\itemsep{-0.2em}
-      \item {Worked on \href{https://www.bgcengineering.ca/cambio-landing/}{Cambio™} Map Project using TypeScript React and C\#}
-      \item {Implemented sketch widget on the map using Arcgis Javascript API, which allows customized drawing and saving on client-side.}
-      \item {Refactored the identify Tool Service in Cambio to enable customized template for different clients.}
+      \item {Worked on \href{https://www.bgcengineering.ca/cambio-landing/}{Cambio™} Map Project using TypeScript React and C\#.}
+      \item {Implemented sketch widget on the map using Arcgis with customized saving of geographic polygons.}
+      \item {Refactored the identify Tool Service in Cambio to enable customized template for different clients and reduce the payload by 20\%.}
   \resumeItemListEnd
   
     \resumeSubheading
@@ -193,7 +207,7 @@
   \begin{itemize}
     \setlength\itemsep{-0.2em}
     \item Developed a web application with rest endpoints using TypeScript.
-    \item Implemented a data controller that can parse HTML and JSON data and a query engine that handles queries in the form of JSON Object.
+    \item Implemented a data controller that can parse HTML and JSON data and a query engine that handles queries
     % \item Solved the course timetabling problem that maximizes student enrolment and minimizes the maximum geo-location distance between any two courses using a greedy algorithm.
     \item Followed Test-Driven Development process, and wrote Robust tests for both backend and frontend.
   \end{itemize}
@@ -252,19 +266,6 @@
   \resumeSubItem{Technologies}
     {React, Datadog, Snowflake, Microsoft Azure, .NET, vscode, Agile} \\
 \resumeSubHeadingListEnd
-
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of British Columbia}{Vancouver, BC}
-      {Bachelor of Science, Honors in Computer Science}{September 2018 -- April 2023 (expected)}
-      \resumeItemListStart
-          \resumeItem{Grade Average (Cummulative)} {90.8\%}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-
 
 % -----------Awards-----------------
 \section{Awards}
